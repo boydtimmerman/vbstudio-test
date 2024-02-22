@@ -1,69 +1,71 @@
 databaseChangeLog:
   #tables
   # include:
-  #   file: ../src/tables/
+  #   file: ../src/database/tables/
   - include:
-      file: ../src/tables/customers.sql
+      file: ../src/database/tables/customers.sql
   - include:
-      file: ../src/tables/inventory.sql
+      file: ../src/database/tables/inventory.sql
   - include:
-      file: ../src/tables/order_items.sql
+      file: ../src/database/tables/order_items.sql
   - include:
-      file: ../src/tables/orders.sql
+      file: ../src/database/tables/orders.sql
   - include:
-      file: ../src/tables/products.sql
+      file: ../src/database/tables/products.sql
   - include:
-      file: ../src/tables/schipments.sql
+      file: ../src/database/tables/schipments.sql
   - include:
-      file: ../src/tables/stores.sql
+      file: ../src/database/tables/stores.sql
+      
   #constraints
   # include:
-  #   file: ../src/constraints/
+  #   file: ../src/database/constraints/
   - include:
-      file: ../src/constraints/inventory.sql
+      file: ../src/database/constraints/inventory.sql
   - include:
-      file: ../src/constraints/order_items.sql
+      file: ../src/database/constraints/order_items.sql
   - include:
-      file: ../src/constraints/orders.sql
+      file: ../src/database/constraints/orders.sql
   - include:
-      file: ../src/constraints/schipments.sql
+      file: ../src/database/constraints/schipments.sql
+
   #index
   # include:
-  #   file: ../src/index/
+  #   file: ../src/database/index/
   - include:
-      file: ../src/index/customers_name_i.sql
+      file: ../src/database/index/customers_name_i.sql
   - include:
-      file: ../src/index/inventory_product_id_i.sql
+      file: ../src/database/index/inventory_product_id_i.sql
   - include:
-      file: ../src/index/order_items_shipment_id_i.sql
+      file: ../src/database/index/order_items_shipment_id_i.sql
   - include:
-      file: ../src/index/order_customerrs_id_i.sql
+      file: ../src/database/index/order_customerrs_id_i.sql
   - include:
-      file: ../src/index/orders_store_id_i.sql
+      file: ../src/database/index/orders_store_id_i.sql
   - include:
-      file: ../src/index/shipment_store_id_i.sql
+      file: ../src/database/index/shipment_store_id_i.sql
+
   #package specs
   # include:
-  #   file: ../src/package_spec/
+  #   file: ../src/database/package_spec/
 
   #views
   # include:
-  #   file: ../src/views/
+  #   file: ../src/database/views/
   - include:
-      file: ../src/views/customer_order_products.sql
+      file: ../src/database/views/customer_order_products.sql
   - include:
-      file: ../src/views/product_orders.sql
+      file: ../src/database/views/product_orders.sql
   - include:
-      file: ../src/views/product_reviews.sql
+      file: ../src/database/views/product_reviews.sql
   - include:
-      file: ../src/views/store_orders.sql
+      file: ../src/database/views/store_orders.sql
 
   #triggers
   # include:
-  #   file: ../src/triggers/
+  #   file: ../src/database/triggers/
 
   #package bodies
   # include:
-  #   file: ../src/package_body/
-  - include:
-      file: ../src/package_body/
+  #   file: ../src/database/package_body/
+
