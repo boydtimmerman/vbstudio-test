@@ -1,0 +1,35 @@
+---
+- # ====== List of Values: CUSTOMERS.EMAIL_ADDRESS =============
+  id: 9960458141640331
+  identification: 
+    name: CUSTOMERS.EMAIL_ADDRESS
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: CUSTOMERS
+
+  column-mapping: 
+    return: CUSTOMER_ID
+    display: EMAIL_ADDRESS
+    default-sort: EMAIL_ADDRESS
+    sort-direction: Ascending (Nulls Last)
+
+- # ====== List of Values: STORES.STORE_NAME ===================
+  id: 9961403127640334
+  identification: 
+    name: STORES.STORE_NAME
+
+  source: 
+    location: Local Database
+    type: Table / View
+    table-owner: Parsing Schema
+    table-name: STORES
+
+  column-mapping: 
+    return: STORE_ID
+    display: STORE_NAME
+    default-sort: STORE_NAME
+    sort-direction: Ascending (Nulls Last)
+

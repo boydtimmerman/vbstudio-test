@@ -1,0 +1,69 @@
+databaseChangeLog:
+  #tables
+  # include:
+  #   file: ../src/tables/
+  - include:
+      file: ../src/tables/customers.sql
+  - include:
+      file: ../src/tables/inventory.sql
+  - include:
+      file: ../src/tables/order_items.sql
+  - include:
+      file: ../src/tables/orders.sql
+  - include:
+      file: ../src/tables/products.sql
+  - include:
+      file: ../src/tables/schipments.sql
+  - include:
+      file: ../src/tables/stores.sql
+  #constraints
+  # include:
+  #   file: ../src/constraints/
+  - include:
+      file: ../src/constraints/inventory.sql
+  - include:
+      file: ../src/constraints/order_items.sql
+  - include:
+      file: ../src/constraints/orders.sql
+  - include:
+      file: ../src/constraints/schipments.sql
+  #index
+  # include:
+  #   file: ../src/index/
+  - include:
+      file: ../src/index/customers_name_i.sql
+  - include:
+      file: ../src/index/inventory_product_id_i.sql
+  - include:
+      file: ../src/index/order_items_shipment_id_i.sql
+  - include:
+      file: ../src/index/order_customerrs_id_i.sql
+  - include:
+      file: ../src/index/orders_store_id_i.sql
+  - include:
+      file: ../src/index/shipment_store_id_i.sql
+  #package specs
+  # include:
+  #   file: ../src/package_spec/
+
+  #views
+  # include:
+  #   file: ../src/views/
+  - include:
+      file: ../src/views/customer_order_products.sql
+  - include:
+      file: ../src/views/product_orders.sql
+  - include:
+      file: ../src/views/product_reviews.sql
+  - include:
+      file: ../src/views/store_orders.sql
+
+  #triggers
+  # include:
+  #   file: ../src/triggers/
+
+  #package bodies
+  # include:
+  #   file: ../src/package_body/
+  - include:
+      file: ../src/package_body/
